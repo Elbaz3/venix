@@ -1,0 +1,66 @@
+.achievements {
+  .container {
+    padding-top: 80px;
+    border-top: $border-prim;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+
+    @media (min-width: $tablet) and (max-width: $desktop-m) {
+      gap: 75px;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 50px;
+      flex-direction: column;
+    }
+  }
+
+  .heading-title {
+    margin: 0;
+
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+    }
+
+    span {
+      margin-bottom: 4px;
+      font-size: 102px;
+      font-weight: 500;
+      line-height: 1;
+
+      @media (max-width: $tablet) {
+        font-size: 70px;
+      }
+      @media (min-width: $tablet) and (max-width: $desktop-m) {
+        font-size: 70px;
+      }
+    }
+
+    p {
+      opacity: 0.6;
+      color: $white;
+      text-transform: none;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.4;
+
+      @media (max-width: $tablet) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
