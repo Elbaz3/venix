@@ -1,0 +1,61 @@
+.services {
+  .container {
+  }
+
+  &__card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: $border-prim;
+    border-radius: 13px;
+    background-image: $gradient-background;
+
+    @media (max-width: $tablet) {
+      padding: 40px 30px;
+      gap: 20px;
+    }
+
+    .icon {
+      background-color: $white;
+      padding: 20px;
+      width: fit-content;
+      border-radius: 13px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.1;
+      }
+
+      p {
+        opacity: 0.6;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .btn--primary {
+    margin: 50px auto 0;
+  }
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

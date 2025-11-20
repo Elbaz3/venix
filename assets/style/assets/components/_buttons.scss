@@ -1,0 +1,56 @@
+.btn--primary {
+  width: fit-content;
+  background-color: $white;
+  padding: 15px 24px;
+  color: $dark;
+  text-transform: uppercase;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-width: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 0.2s;
+  }
+
+  .text-button {
+    transition: transform 0.2s ease; // smooth in/out
+  }
+
+  &:hover .text-button {
+    transform: translateY(-200%);
+  }
+  &:hover img {
+    transform: translateX(-50%) translateY(-300%);
+  }
+}
+
+.btn--second {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+
+  .line {
+    height: 1px;
+    width: 15%;
+    background-color: $light-grey;
+    transition: 0.2s ease; // smooth in/out
+  }
+  &:hover .line {
+    width: 100%;
+  }
+}

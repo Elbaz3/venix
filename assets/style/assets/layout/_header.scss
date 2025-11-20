@@ -1,0 +1,60 @@
+.ovre {
+  width: 100%;
+  height: 80vh;
+  background-image: radial-gradient(circle at 0 0, #99526380, #fff0 35%);
+  position: absolute;
+  // inset: 0 0 auto;
+}
+header {
+  background-color: transparent;
+  align-items: center;
+  min-height: 5.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+
+  .container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .navbar .nav-link {
+    color: $white;
+    opacity: 0.6;
+    transition: all 0.3s;
+    padding: 12px 11.2px;
+    font-size: 18px;
+    &.active,
+    &:hover {
+      color: $white;
+      opacity: 1;
+    }
+  }
+  .logo {
+    width: 115px;
+  }
+
+  .navbar-collapse {
+    margin: 0 20px;
+
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 100%;
+      z-index: 1000;
+      width: 100%;
+      height: 100vh;
+      background-color: $dark;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: none;
+    color: white;
+    &::before {
+      content: "☰";
+      font-size: 1.5rem;
+    }
+  }
+}

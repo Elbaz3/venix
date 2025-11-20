@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark;
+  color: $white;
+  font-family: Geist, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  height: 1000px;
+}
+
+section {
+  padding: 120px 5%;
+  position: relative;
+
+  @media (max-width: $tablet) {
+    padding: 40px 5%;
+  }
+}
+
+.other-font {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}

@@ -1,0 +1,82 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 70px;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    padding-top: 38px;
+  }
+
+  & .container {
+    display: flex;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 500;
+    max-width: 538px;
+    @media (max-width: 767px) {
+      max-width: 83%;
+    }
+    @media (max-width: 479px) {
+      max-width: 100%;
+    }
+  }
+  h1 {
+    background-image: $gradient-text;
+    background-clip: text;
+    -webkit-background-clip: text; // for Chrome/Safari
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 1.05;
+
+    @media (max-width: 991px) {
+      font-size: 64px;
+    }
+    @media (max-width: 767px) {
+      font-size: 50px;
+    }
+    @media (max-width: 479px) {
+      font-size: 48px;
+    }
+  }
+  p {
+    opacity: 1;
+    color: $white;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: Geist, sans-serif;
+  }
+
+  .shape-1 {
+    width: 49vw;
+    position: absolute;
+    inset: 50px -100px auto auto;
+  }
+  .shape-1.second {
+    filter: blur(5px);
+    width: 450px;
+    height: auto;
+    inset: auto auto -190px 50px;
+    @media screen and (max-width: 991px) {
+      width: 350px;
+      left: -92px;
+    }
+  }
+
+  .shadow-blur {
+    background-image: linear-gradient(180deg, #fff0, $dark 64%);
+    min-height: 200px;
+    position: absolute;
+    inset: auto 0% -0%;
+  }
+}

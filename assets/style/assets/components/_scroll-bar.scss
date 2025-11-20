@@ -1,0 +1,39 @@
+.scroll-bar {
+  display: flex;
+  padding-block: 30px;
+
+  .container {
+    overflow: hidden;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 0.25fr minmax(200px, 1fr);
+    align-content: center;
+    align-items: center;
+  }
+
+  &__brands {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 74px;
+    width: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 16px 8px;
+    }
+
+    img {
+      max-width: fit-content;
+    }
+  }
+}
