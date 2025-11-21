@@ -1,0 +1,125 @@
+.footer {
+  padding: 50px 5% 0;
+  .container {
+  }
+
+  &__top {
+    text-align: center;
+    background-image: url(../media/pictures/footer.avif);
+    background-position: 200%;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    border-radius: 20px;
+    padding: 110px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+    border: $border-prim;
+
+    @media (max-width: 479px) {
+      background-position: -70%;
+    }
+
+    @media (max-width: $tablet) {
+      background-size: 500px;
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+
+    .heading-title {
+      max-width: 830px;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 58px;
+
+      @media (max-width: $tablet) {
+        font-size: 28px;
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: fit-content;
+      justify-content: center;
+    }
+  }
+
+  &__bottom {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 150px;
+
+      @media (max-width: $laptop) {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        @media (max-width: $tablet) {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+      .title {
+        color: $white;
+        margin-bottom: 1rem;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      &__reach {
+        ul {
+          display: flex;
+          gap: 17px;
+        }
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+
+        li {
+          opacity: 0.7;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .footer-list {
+        li {
+          margin-bottom: 6px;
+          font-size: 1.1rem;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.3s;
+          color: $light-grey;
+          cursor: pointer;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
