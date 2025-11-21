@@ -1,0 +1,37 @@
+.test-scroll {
+  .container {
+    overflow: hidden;
+  }
+
+  .list {
+    display: flex;
+    gap: 25px;
+    width: fit-content;
+
+    .image {
+      border-radius: 25px;
+      min-height: 440px;
+      width: 520px;
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+
+      &:nth-child(odd) {
+        width: 300px;
+      }
+    }
+
+    .image-1 {
+      background-image: url(../media/pictures/company-list-1.avif);
+    }
+    .image-2 {
+      background-image: url(../media/pictures/company-list-2.avif);
+    }
+    .image-3 {
+      background-image: url(../media/pictures/company-list-3.avif);
+    }
+    .image-4 {
+      background-image: url(../media/pictures/company-list-4.avif);
+    }
+  }
+}
