@@ -17,12 +17,14 @@
 @import "./assets/layout/header";
 @import "./assets/layout/footer";
 
+// shared parts
+@import "./assets/shared/hero";
+@import "./assets/shared/our-work";
+@import "./assets/shared/testimonial";
+
 // page's parts
-@import "./assets/pages/home/hero";
 @import "./assets/pages/home/about";
 @import "./assets/pages/home/services";
 @import "./assets/pages/home/ceo";
-@import "./assets/pages/home/our-work";
 @import "./assets/pages/home/achievements";
 @import "./assets/pages/home/testimonials";
-@import "./assets/pages/home/our-team";
